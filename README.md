@@ -3,4 +3,4 @@
 
 Fala devs!
 
-Pereira aqui, eu sou fã de coffeescript! E bora codar!!!
+Pereira aqui! Bora codar!!!
