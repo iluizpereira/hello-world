@@ -14,11 +14,21 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <script type="text/babel">
-        const root = document.getElementById('root')
-        
-        let nome = "Ítalo Pereira"
 
-        ReactDOM.render(<h1>Ola! O meu nome é: {nome}</h1>,root)
+        function MeuComponent(){
+
+            var nome = "Ítalo"
+            var sobrenome = "Pereira"
+            return(
+                <div>
+                  <h1>Olá, React!</h1>
+                  <p>O meu nome é: {nome} {sobrenome}</p>
+                </div>
+            )
+        }
+
+        const root = document.getElementById('root')
+        ReactDOM.render(<MeuComponent />,root)
     </script>
 </body>
 </html>
