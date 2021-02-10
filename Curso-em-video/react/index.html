@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App one - React</title>
-    <p>Olá, React!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptate odio quae quos id quaerat modi laboriosam nesciunt impedit iure sint assumenda quia sapiente vel, corrupti maxime ducimus molestias deleniti.</p>
-    <h1>Teste de React</h1>
 </head>
 <body>
     
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        const root = document.getElementById('root')
+        
+        let nome = "Ítalo Pereira"
+
+        ReactDOM.render(<h1>Ola! O meu nome é: {nome}</h1>,root)
+    </script>
 </body>
 </html>
